@@ -8,14 +8,13 @@ const onFormSubmit = (event) => {
   const email = formElements.email.value;
   const password = formElements.password.value;
 
-    if (email === "" || password === "")
-        alert("Все поля должны быть заполнены.");
+  if (email === "" || password === "") alert("Все поля должны быть заполнены.");
 
   const dataForm = {
     email,
     password,
   };
-    console.log(dataForm);
+  console.log(dataForm);
   event.currentTarget.reset();
 };
 
